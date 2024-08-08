@@ -11,4 +11,4 @@ contactButton.addEventListener("click", contact);
 let menuButton = document.getElementById("menu");
 menuButton.addEventListener("click", menu);
 
-menu();
+home();

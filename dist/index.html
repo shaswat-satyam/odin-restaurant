@@ -1,18 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <button id="home">Home</button>
-        <button id="menu">Menu</button>
-        <button id="contact">Contact</button>
-      </nav>
-    </header>
-    <div id="content"></div>
-  <script defer src="main.js"></script></body>
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: SyntaxError: /home/shaswat/repos/theOdinProject/javascript/Rest/package.json (directory description file): SyntaxError: /home/shaswat/repos/theOdinProject  /javascript/Rest/package.json (directory description file): SyntaxError: Expected double-quoted property name in JSON at position 204
+  ModuleNotFoundError: Module not found: SyntaxError: /home/shaswat/repos/theOdinProject/javascript/Rest/package.json (directory description file): SyntaxError: /home/shaswat  /repos/theOdinProject/javascript/Rest/package.json (directory description file): SyntaxError: Expected double-quoted property name in JSON at position 204
+      at /home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/webpack/lib/Compilation.js:2100:28
+      at /home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/webpack/lib/NormalModuleFactory.js:904:13
+      at eval (eval at create (/home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:10:1)
+      at /home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/webpack/lib/NormalModuleFactory.js:341:22
+      at eval (eval at create (/home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)
+      at /home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/webpack/lib/NormalModuleFactory.js:518:22
+      at /home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/webpack/lib/NormalModuleFactory.js:155:11
+      at /home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/webpack/lib/NormalModuleFactory.js:738:23
+      at /home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/neo-async/async.js:2830:7
+      at done (/home/shaswat/repos/theOdinProject/javascript/Rest/node_modules/neo-async/async.js:2925:13)
+  
+  - Compilation.js:2100 
+    [Rest]/[webpack]/lib/Compilation.js:2100:28
+  
+  - NormalModuleFactory.js:904 
+    [Rest]/[webpack]/lib/NormalModuleFactory.js:904:13
+  
+  
+  - NormalModuleFactory.js:341 
+    [Rest]/[webpack]/lib/NormalModuleFactory.js:341:22
+  
+  
+  - NormalModuleFactory.js:518 
+    [Rest]/[webpack]/lib/NormalModuleFactory.js:518:22
+  
+  - NormalModuleFactory.js:155 
+    [Rest]/[webpack]/lib/NormalModuleFactory.js:155:11
+  
+  - NormalModuleFactory.js:738 
+    [Rest]/[webpack]/lib/NormalModuleFactory.js:738:23
+  
+  - async.js:2830 
+    [Rest]/[neo-async]/async.js:2830:7
+  
+  - async.js:2925 done
+    [Rest]/[neo-async]/async.js:2925:13
+  
+  - child-compiler.js:174 
+    [Rest]/[html-webpack-plugin]/lib/child-compiler.js:174:18
+  
+  - Compiler.js:625 finalCallback
+    [Rest]/[webpack]/lib/Compiler.js:625:5
+  
+  - Compiler.js:660 
+    [Rest]/[webpack]/lib/Compiler.js:660:11
+  
+  - Compiler.js:1349 
+    [Rest]/[webpack]/lib/Compiler.js:1349:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [Rest]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1345 
+    [Rest]/[webpack]/lib/Compiler.js:1345:33
+  
+  - Compilation.js:2906 finalCallback
+    [Rest]/[webpack]/lib/Compilation.js:2906:11
+  
+  - Compilation.js:3215 
+    [Rest]/[webpack]/lib/Compilation.js:3215:11
+  
+  
+</pre><script defer src="main.js"></script>
